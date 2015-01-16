@@ -71,3 +71,9 @@ names(train_data_subject) <- c("subject")
 test_data <- cbind(cbind(test_data_features, test_data_subject), test_data_activity)
 train_data <- cbind(cbind(train_data_features, train_data_subject), train_data_activity)
 big_data <- rbind(test_data, train_data)
+
+############################################################################################
+# Extracts only the measurements on the mean and standard deviation for each measurement.
+############################################################################################
+
+big_data_mean_std <- big_data[,grepl("mean\\(\\)|std\\(\\)|subject|activity", names(big_data))]
