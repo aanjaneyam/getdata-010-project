@@ -100,3 +100,11 @@ names(big_data_mean_std)<-gsub("^t", "time", names(big_data_mean_std))
 names(big_data_mean_std)<-gsub("^f", "frequency", names(big_data_mean_std))
 names(big_data_mean_std)<-gsub("BodyBody", "Body", names(big_data_mean_std))
 names(big_data_mean_std)<-gsub("Mag", "Magnitude", names(big_data_mean_std))
+
+######################################################################################################################
+# Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+######################################################################################################################
+
+tidy_data <- aggregate(. ~ subject + activityname, big_data_mean_std, mean)
+tidy_data <- tidy_data[order(tidy_data$subject, tidy_data$activityname),]
+write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE, quote = FALSE)
