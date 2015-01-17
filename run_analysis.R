@@ -65,6 +65,7 @@ names(test_data_subject) <- c("subject")
 names(train_data_activity) <- c("activity")
 names(train_data_features) <- feature_names$V2
 names(train_data_subject) <- c("subject")
+names(activity_labels) <- c("activity", "activityname")
 
 # Merge the data to create one data set
 
@@ -77,3 +78,10 @@ big_data <- rbind(test_data, train_data)
 ############################################################################################
 
 big_data_mean_std <- big_data[,grepl("mean\\(\\)|std\\(\\)|subject|activity", names(big_data))]
+
+###########################################################################
+# Uses descriptive activity names to name the activities in the data set
+###########################################################################
+
+big_data_mean_std <- merge(big_data_mean_std, activity_labels, by = "activity")
+big_data_mean_std <- big_data_mean_std[,-1]
