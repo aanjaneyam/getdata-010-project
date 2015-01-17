@@ -17,11 +17,8 @@ dateDownloaded
 ##################################################################
 # Unzip the file downloaded file and place all its content in UCI HAR Dataset directory
 ##################################################################
-unzip(destfile, exdir="./project_data")
 
-path_rf <- "./project_data/UCI HAR Dataset"
-files<-list.files(path_rf, recursive=TRUE)
-files
+unzip(destfile, exdir="./project_data")
 
 ##################################################################
 #### To complete the project we just need the the following files from the data (files in the "Inertial Signals" directory are not needed)
@@ -32,8 +29,8 @@ files
     #UCI HAR Dataset/train/subject_train.txt
     #UCI HAR Dataset/train/X_train.txt
     #UCI HAR Dataset/train/y_train.txt
-	#UCI HAR Dataset/features.txt
-	#UCI HAR Dataset/activity_labels.txt
+    #UCI HAR Dataset/features.txt
+    #UCI HAR Dataset/activity_labels.txt
 ##################################################################
 
 ##################################################################
@@ -85,3 +82,21 @@ big_data_mean_std <- big_data[,grepl("mean\\(\\)|std\\(\\)|subject|activity", na
 
 big_data_mean_std <- merge(big_data_mean_std, activity_labels, by = "activity")
 big_data_mean_std <- big_data_mean_std[,-1]
+
+##############################################################
+# Appropriately labels the data set with descriptive names.
+##############################################################
+
+# Remove hyphens and parenthesis
+names(big_data_mean_std) <- gsub("\\-mean\\(\\)\\-", "Mean", names(big_data_mean_std))
+names(big_data_mean_std) <- gsub("\\-std\\(\\)\\-", "Std", names(big_data_mean_std))
+names(big_data_mean_std) <- gsub("\\-mean\\(\\)", "Mean", names(big_data_mean_std))
+names(big_data_mean_std) <- gsub("\\-std\\(\\)", "Std", names(big_data_mean_std))
+
+# Add descriptive names
+names(big_data_mean_std)<-gsub("Acc", "Accelerometer", names(big_data_mean_std))
+names(big_data_mean_std)<-gsub("Gyro", "Gyroscope", names(big_data_mean_std))
+names(big_data_mean_std)<-gsub("^t", "time", names(big_data_mean_std))
+names(big_data_mean_std)<-gsub("^f", "frequency", names(big_data_mean_std))
+names(big_data_mean_std)<-gsub("BodyBody", "Body", names(big_data_mean_std))
+names(big_data_mean_std)<-gsub("Mag", "Magnitude", names(big_data_mean_std))
