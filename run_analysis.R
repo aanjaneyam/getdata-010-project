@@ -21,7 +21,7 @@ dateDownloaded
 unzip(destfile, exdir="./project_data")
 
 ##################################################################
-#### To complete the project we just need the the following files from the data (files in the "Inertial Signals" directory are not needed)
+#### To complete the project we just need the the following files from the data (files in the "Inertial Signals" directory are not needed as they do not have mean and std measurements)
 
     #UCI HAR Dataset/test/subject_test.txt
     #UCI HAR Dataset/test/X_test.txt
@@ -32,6 +32,8 @@ unzip(destfile, exdir="./project_data")
     #UCI HAR Dataset/features.txt
     #UCI HAR Dataset/activity_labels.txt
 ##################################################################
+
+message("### reading and processing data, please wait...")
 
 ##################################################################
 # Load data
@@ -108,3 +110,5 @@ names(big_data_mean_std)<-gsub("Mag", "Magnitude", names(big_data_mean_std))
 tidy_data <- aggregate(. ~ subject + activityname, big_data_mean_std, mean)
 tidy_data <- tidy_data[order(tidy_data$subject, tidy_data$activityname),]
 write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE, quote = FALSE)
+
+message("### run_analysis.R complete!")
