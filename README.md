@@ -47,4 +47,4 @@ The script in run_analysis.R does all the processing to clean the given datasets
 
 7. Labels of the dataset are then reset with descriptive names using names() and gsub() functions.
 
-8. run_analysis.R finally creates an independent tidy dataset with the average of each variable for each activity and each subject using aggregate() function. It also orders the dataset by subject and activitynames. Lastly it uses write.table function to write the required dataset to tidy_data.txt file.
+8. run_analysis.R finally creates an independent tidy dataset with the average of each variable for each activity and each subject using aggregate() function. It also orders the dataset by subject and activitynames. Lastly it uses write.table function to write the independent dataset to tidy_data.txt file.
