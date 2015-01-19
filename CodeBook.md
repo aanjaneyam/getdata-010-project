@@ -130,132 +130,132 @@ The raw datasets are processed with run_analisys.R script to create a final tidy
         - "timeBodyAccelerometerMeanZ"              
  
       * Time domain body accelerometer standard deviation along X, Y, and Z:     
-        - "timeBodyAccelerometerStdX"                  
-        - "timeBodyAccelerometerStdY"                  
-        - "timeBodyAccelerometerStdZ"  
-       
-       * Time domain gravity accelerometer mean along X, Y, and Z:  
+        - "timeBodyAccelerometerStdX"
+        - "timeBodyAccelerometerStdY"
+        - "timeBodyAccelerometerStdZ"
+        
+      * Time domain gravity accelerometer mean along X, Y, and Z:  
         - "timeGravityAccelerometerMeanX"              
         - "timeGravityAccelerometerMeanY"              
         - "timeGravityAccelerometerMeanZ"             
         
-       * Time domain gravity accelerometer standard deviation along X, Y, and Z: 
+      * Time domain gravity accelerometer standard deviation along X, Y, and Z: 
         - "timeGravityAccelerometerStdX"               
         - "timeGravityAccelerometerStdY"               
         - "timeGravityAccelerometerStdZ"               
         
-       * Time domain body accelerometer jerk mean along X, Y, and Z: 
+      * Time domain body accelerometer jerk mean along X, Y, and Z: 
         - "timeBodyAccelerometerJerkMeanX"             
         - "timeBodyAccelerometerJerkMeanY"             
         - "timeBodyAccelerometerJerkMeanZ"             
         
-       * Time domain body accelerometer jerk standard deviation along X, Y, and Z: 
+      * Time domain body accelerometer jerk standard deviation along X, Y, and Z: 
         - "timeBodyAccelerometerJerkStdX"              
         - "timeBodyAccelerometerJerkStdY"              
         - "timeBodyAccelerometerJerkStdZ"              
         
-       * Time domain body gyroscope mean along X, Y, and Z: 
+      * Time domain body gyroscope mean along X, Y, and Z: 
         - "timeBodyGyroscopeMeanX"                     
         - "timeBodyGyroscopeMeanY"                     
         - "timeBodyGyroscopeMeanZ"                     
         
-       * Time domain body gyroscope standard deviation along X, Y, and Z: 
+      * Time domain body gyroscope standard deviation along X, Y, and Z: 
         - "timeBodyGyroscopeStdX"                      
         - "timeBodyGyroscopeStdY"                      
         - "timeBodyGyroscopeStdZ"                      
         
-       * Time domain body gyroscope jerk mean along X, Y, and Z: 
+      * Time domain body gyroscope jerk mean along X, Y, and Z: 
         - "timeBodyGyroscopeJerkMeanX"                 
         - "timeBodyGyroscopeJerkMeanY"                 
         - "timeBodyGyroscopeJerkMeanZ"                 
         
-       * Time domain body gyroscope jerk standard deviation along X, Y, and Z: 
+      * Time domain body gyroscope jerk standard deviation along X, Y, and Z: 
         - "timeBodyGyroscopeJerkStdX"                  
         - "timeBodyGyroscopeJerkStdY"                  
         - "timeBodyGyroscopeJerkStdZ"                  
         
-       * Time domain body accelerometer magnitude mean: 
+      * Time domain body accelerometer magnitude mean: 
         - "timeBodyAccelerometerMagnitudeMean"       
         
-       * Time domain body accelerometer magnitude standard deviation:  
+      * Time domain body accelerometer magnitude standard deviation:  
         - "timeBodyAccelerometerMagnitudeStd"          
         
-       * Time domain gravity accelerometer magnitude mean: 
+      * Time domain gravity accelerometer magnitude mean: 
         - "timeGravityAccelerometerMagnitudeMean"      
         
-       * Time domain gravity accelerometer magnitude standard deviation: 
+      * Time domain gravity accelerometer magnitude standard deviation: 
         - "timeGravityAccelerometerMagnitudeStd"       
         
-       * Time domain body accelerometer jerk magnitude mean: 
+      * Time domain body accelerometer jerk magnitude mean: 
         - "timeBodyAccelerometerJerkMagnitudeMean"     
         
-       * Time domain body accelerometer jerk magnitude standard deviation: 
+      * Time domain body accelerometer jerk magnitude standard deviation: 
         - "timeBodyAccelerometerJerkMagnitudeStd"      
         
-       * Time domain body gyroscope magnitude mean: 
+      * Time domain body gyroscope magnitude mean: 
         - "timeBodyGyroscopeMagnitudeMean"             
         
-       * Time domain body gyroscope magnitude standard deviation: 
+      * Time domain body gyroscope magnitude standard deviation: 
         - "timeBodyGyroscopeMagnitudeStd"              
        
-       * Time domain body gyroscope jerk magnitude mean:
+      * Time domain body gyroscope jerk magnitude mean:
         - "timeBodyGyroscopeJerkMagnitudeMean"         
         
-       * Time domain body gyroscope jerk magnitude standard deviation: 
+      * Time domain body gyroscope jerk magnitude standard deviation: 
         - "timeBodyGyroscopeJerkMagnitudeStd"          
         
-       * Frequency body acceleration mean along X, Y, and Z:   
+      * Frequency body acceleration mean along X, Y, and Z:   
         - "frequencyBodyAccelerometerMeanX"            
         - "frequencyBodyAccelerometerMeanY"            
         - "frequencyBodyAccelerometerMeanZ"            
         
-       * Frequency body acceleration standard deviation along X, Y, and Z:  
+      * Frequency body acceleration standard deviation along X, Y, and Z:  
         - "frequencyBodyAccelerometerStdX"             
         - "frequencyBodyAccelerometerStdY"             
         - "frequencyBodyAccelerometerStdZ"             
         
-       * Frequency body accelerometer jerk mean along X, Y, and Z: 
+      * Frequency body accelerometer jerk mean along X, Y, and Z: 
         - "frequencyBodyAccelerometerJerkMeanX"        
         - "frequencyBodyAccelerometerJerkMeanY"        
         - "frequencyBodyAccelerometerJerkMeanZ"        
         
-       * Frequency body accelerometer jerk standard deviation along X, Y, and Z: 
+      * Frequency body accelerometer jerk standard deviation along X, Y, and Z: 
         - "frequencyBodyAccelerometerJerkStdX"         
         - "frequencyBodyAccelerometerJerkStdY"         
         - "frequencyBodyAccelerometerJerkStdZ"         
         
-       * Frequency body gyroscope mean along X, Y, and Z: 
+      * Frequency body gyroscope mean along X, Y, and Z: 
         - "frequencyBodyGyroscopeMeanX"                
         - "frequencyBodyGyroscopeMeanY"                
         - "frequencyBodyGyroscopeMeanZ"                
         
-       * Frequency body gyroscope standard deviation along X, Y, and Z:   
+      * Frequency body gyroscope standard deviation along X, Y, and Z:   
         - "frequencyBodyGyroscopeStdX"                 
         - "frequencyBodyGyroscopeStdY"                 
         - "frequencyBodyGyroscopeStdZ"                 
         
-       * Frequency body accelerometer magnitude mean: 
+      * Frequency body accelerometer magnitude mean: 
         - "frequencyBodyAccelerometerMagnitudeMean"    
         
-       * Frequency body accelerometer magnitude standard deviation: 
+      * Frequency body accelerometer magnitude standard deviation: 
         - "frequencyBodyAccelerometerMagnitudeStd"     
         
-       * Frequency body accelerometer jerk magnitude mean:  
+      * Frequency body accelerometer jerk magnitude mean:  
         - "frequencyBodyAccelerometerJerkMagnitudeMean"
         
-       * Frequency body accelerometer jerk magnitude standard deviation: 
+      * Frequency body accelerometer jerk magnitude standard deviation: 
         - "frequencyBodyAccelerometerJerkMagnitudeStd" 
         
-       * Frequency body gyroscope magnitude mean: 
+      * Frequency body gyroscope magnitude mean: 
         - "frequencyBodyGyroscopeMagnitudeMean"        
         
-       * Frequency body gyroscope magnitude standard deviation: 
+      * Frequency body gyroscope magnitude standard deviation: 
         - "frequencyBodyGyroscopeMagnitudeStd"         
         
-       * Frequency body gyroscope jerk magnitude mean:
+      * Frequency body gyroscope jerk magnitude mean:
         - "frequencyBodyGyroscopeJerkMagnitudeMean"    
         
-       * Frequency body gyroscope jerk magnitude standard deviation: 
+      * Frequency body gyroscope jerk magnitude standard deviation: 
         - "frequencyBodyGyroscopeJerkMagnitudeStd"    
     
 ## Note
