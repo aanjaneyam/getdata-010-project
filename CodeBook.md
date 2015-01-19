@@ -259,4 +259,4 @@ The raw datasets are processed with run_analisys.R script to create a final tidy
         - "frequencyBodyGyroscopeJerkMagnitudeStd"    
     
 ## Note
-* The raw data description text above has been derived from Readme.txt, features_info.txt files downloaded with the raw UCI HAR dataset. 
+* The raw data description text above has been derived from Readme.txt and features_info.txt files downloaded with the raw UCI HAR dataset. 
