@@ -122,7 +122,7 @@ The raw datasets are processed with run_analisys.R script to create a final tidy
     - STANDING
     - LAYING
 
-* **Measurements**: All measurement variables given below are either mean or standard deviation values for each subject and activity. All values are floating point numbers. For easy reading variable names presented below have been categorised acoording to value type.
+* **Measurements**: All measurement variables given below are either mean or standard deviation values for each subject and activity. All values are floating point numbers. For easy reading variable names presented below have been categorised acoording to value type. For further details of these measurement variables please see "Features/Signals" section above.
   
       * Time domain body acceleration mean along X, Y, and Z:  
         - "timeBodyAccelerometerMeanX"                 
