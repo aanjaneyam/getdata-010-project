@@ -15,9 +15,9 @@ The project contains three files :
 
 * **run_analysis.R** - this is the main script which does all the work involved in creating the final tidy dataset. It downloads and processes the given datasets to create the final tidy dataset named tidy_data.txt. run_analysis.R file is well commented at every stage.
 
-* **Codebook.md** - This file contains details of all the variables in the tidy dataset and any transformations or work that was performed to clean up the data.
+* **CodeBook.md** - This file contains details of all the variables in the tidy dataset and any transformations or work that was performed to clean up the data.
 
-* **Readme.md** - This file gives a short overview of the project and explains the working of the run_analysis.R script.
+* **README.md** - This file gives a short overview of the project and explains the working of the run_analysis.R script.
 
 
 ## run_analysis.R 
